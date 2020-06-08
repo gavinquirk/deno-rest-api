@@ -10,7 +10,8 @@ import {
 // Enable router
 const router = new Router();
 
-router.get("/api/v1/products", getProducts)
+router
+  .get("/api/v1/products", getProducts)
   .get("/api/v1/products/:id", getProduct)
   .post("/api/v1/products", addProduct)
   .put("/api/v1/products/:id", updateProduct)
